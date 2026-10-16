@@ -1,0 +1,10 @@
+opencv-python
+ultralytics
+pyttsx3
+pillow
+numpy
+torch
+torchvision
+timm
+ollama
+easyocr
