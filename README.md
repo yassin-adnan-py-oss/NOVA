@@ -48,14 +48,22 @@ The app can use the webcam or a recorded video file.
 
 ## Test results
 
-*Fill this table with real measurements only (machine: ____________).*
+Measured on one laptop: Intel Core i3-1115G4 @ 3.00 GHz, 8 GB RAM, Intel UHD Graphics
+(no discrete GPU), Windows 10, CPU only. Times were taken by hand with a stopwatch
+(about +/- 0.5 s).
 
 | Measure | Result |
 |---|---|
-| Frames per second (CPU only) | |
-| Time to answer a memory question | |
-| Memory recall: correct answers / attempts | |
-| Objects detected correctly in the demo video | |
+| Memory question ("Where is my phone?") in the Memory tab | about 0.5 s |
+| Same memory question asked in the AI tab | about 0.5 s |
+| General question answered by the local Llama model (AI tab) | about 1 min 27 s |
+| Read Text (OCR) on one camera frame | about 22 s |
+| Frames per second (CPU only) | not measured yet |
+| Memory recall: correct answers / attempts | not measured yet |
+| Objects detected correctly in the demo video | not measured yet |
+
+Notes: the Llama time may include loading the model into memory on the first question,
+and the OCR time may include loading the OCR models on the first read.
 
 ## Known limitations
 
@@ -68,13 +76,13 @@ The app can use the webcam or a recorded video file.
   the camera.
 - Colour names are approximate and degrade in poor light; blurry or dark video lowers detection accuracy.
 - Live-webcam support depends on the camera driver; most testing used recorded video.
-- On a CPU-only laptop the frame rate is limited.
+- On a CPU-only laptop the frame rate is limited, general questions to the local Llama model
+  are slow (see the table above), and the first OCR read takes tens of seconds.
 
 ## AI assistance and credits
 
 This project was built with the help of AI assistants (Claude, ChatGPT and Gemini) for coding,
 code review and planning. The team ran, tested and is responsible for the code.
 
-- Project lead, detection pipeline, memory, agent, UI: [YOUR NAME]
-- OCR module: [TEAMMATE NAME]
-
+- Project lead, detection pipeline, memory, agent, UI: Yassin Adnan Mohemad Abdel Mohsen
+- OCR module: Yassin Mohemad Ahmed Amin
