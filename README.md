@@ -1,6 +1,6 @@
 # NOVA — Offline Vision Assistant for People Who Are Blind or Have Low Vision
 
-NOVA turns a camera (or a recorded video) into spoken, real-time awareness of the
+NOVA turns a camera (or a recorded video) into spoken, live awareness of the
 surroundings: what is there, where it is, what colour it is, whether it is getting
 closer, and where an object was last seen. Everything runs on the user's own
 computer — there are no cloud services at runtime.
@@ -50,7 +50,7 @@ The app can use the webcam or a recorded video file.
 
 Measured on one laptop: Intel Core i3-1115G4 @ 3.00 GHz, 8 GB RAM, Intel UHD Graphics
 (no discrete GPU), Windows 10, CPU only. Times were taken by hand with a stopwatch
-(about +/- 0.5 s).
+(about +/- 0.5 s); FPS is the counter shown in the app.
 
 | Measure | Result |
 |---|---|
@@ -58,12 +58,13 @@ Measured on one laptop: Intel Core i3-1115G4 @ 3.00 GHz, 8 GB RAM, Intel UHD Gra
 | Same memory question asked in the AI tab | about 0.5 s |
 | General question answered by the local Llama model (AI tab) | about 30 s |
 | Read Text (OCR) on one camera frame | about 22 s |
-| Frames per second (CPU only) | 4 FPS |
-| Memory recall: correct answers / attempts | correct answers 20 / attempts 20 |
-| Objects detected correctly in the demo video | 2 from 2 |
+| Frames per second (CPU only, on-screen counter) | about 4 FPS |
+| Memory recall: correct answers / attempts | 20 correct out of 20 |
+| Objects detected correctly in the demo video | 2 correct out of 2 checked (very small sample) |
 
-Notes: the Llama time may include loading the model into memory on the first question,
-and the OCR time may include loading the OCR models on the first read.
+Notes: the Llama time may include loading the model into memory on the first question, and
+it grows with the length of the answer. The OCR time may include loading the OCR models
+on the first read.
 
 ## Known limitations
 
