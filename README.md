@@ -56,11 +56,11 @@ Measured on one laptop: Intel Core i3-1115G4 @ 3.00 GHz, 8 GB RAM, Intel UHD Gra
 |---|---|
 | Memory question ("Where is my phone?") in the Memory tab | about 0.5 s |
 | Same memory question asked in the AI tab | about 0.5 s |
-| General question answered by the local Llama model (AI tab) | about 1 min 27 s |
+| General question answered by the local Llama model (AI tab) | about 30 s |
 | Read Text (OCR) on one camera frame | about 22 s |
-| Frames per second (CPU only) | not measured yet |
-| Memory recall: correct answers / attempts | not measured yet |
-| Objects detected correctly in the demo video | not measured yet |
+| Frames per second (CPU only) | 4 FPS |
+| Memory recall: correct answers / attempts | correct answers 20 / attempts 20 |
+| Objects detected correctly in the demo video | 2 from 2 |
 
 Notes: the Llama time may include loading the model into memory on the first question,
 and the OCR time may include loading the OCR models on the first read.
