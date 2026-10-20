@@ -86,5 +86,6 @@ models on the first read.
 This project was built with the help of AI assistants (Claude, ChatGPT and Gemini) for coding,
 code review and planning. The team ran, tested and is responsible for the code.
 
-- Project lead, detection pipeline, memory, agent, UI: Yassin Adnan Mohemad Abdel Mohsen
+- Project lead, detection pipeline, agent, UI: Yassin Adnan Mohemad Abdel Mohsen
 - OCR module: Yassin Mohemad Ahmed Amin
+- Memory: Ganna Adnan Mohemad Abdel Mohsen
