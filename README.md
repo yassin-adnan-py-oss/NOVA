@@ -56,15 +56,16 @@ Measured on one laptop: Intel Core i3-1115G4 @ 3.00 GHz, 8 GB RAM, Intel UHD Gra
 |---|---|
 | Memory question ("Where is my phone?") in the Memory tab | about 0.5 s |
 | Same memory question asked in the AI tab | about 0.5 s |
-| General question answered by the local Llama model (AI tab) | about 30 s |
+| Local Llama 3B answering "2+2" in the AI tab (one-line answer) | about 30 s |
 | Read Text (OCR) on one camera frame | about 22 s |
 | Frames per second (CPU only, on-screen counter) | about 4 FPS |
 | Memory recall: correct answers / attempts | 20 correct out of 20 |
 | Objects detected correctly in the demo video | 2 correct out of 2 checked (very small sample) |
 
-Notes: the Llama time may include loading the model into memory on the first question, and
-it grows with the length of the answer. The OCR time may include loading the OCR models
-on the first read.
+Notes: a one-line answer still took about 30 s, so the delay is not caused by the length of the
+answer. We have not yet isolated the cause (loading the model into memory on the first question,
+or competition with the video processing for the CPU). The OCR time may include loading the OCR
+models on the first read.
 
 ## Known limitations
 
